@@ -1,0 +1,7 @@
+services:
+    nicebb.pmsearch.listener:
+        class: nicebb\pmsearch\event\listener
+        arguments:
+            - '@user'
+        tags:
+            - { name: event.listener }
